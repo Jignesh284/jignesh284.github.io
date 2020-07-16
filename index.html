@@ -18,36 +18,42 @@
 </head>
 <body>
     <div class="wrapper">
+        <audio id="yourAudio" preload='none'>
+            <source src='./media/jignesh_modi.m4a' type='audio/mp4' />
+        </audio>
+        <a href="#" id="audioControl"><i class="fas fa-microphone-alt"></i></a>
         <div class="box">
             <h1>Modi</h1>
             <h1>Jignesh</h1>
-            
         </div>
     </div>
     <!-- MENU -->
     <section class="section-menu">
         <ul class="icon_bar clearfix">
-            <li class="icon_bar_item" style="margin-left: 0;"><i class="fas fa-user-graduate"></i></li>
-            <li class="icon_bar_item"><i class="fas fa-briefcase"></i></li>
-            <li class="icon_bar_item"><i class="fas fa-code"></i></li>
-            <li class="icon_bar_item" style="margin-right: 0;"><i class="fas fa-laptop-code"></i></li>
+            <li class="icon_bar_item" style="margin-left: 0;">
+                <a class="menu-icon-links" href="#projects"><i class="fas fa-user-graduate"></i></a></li>
+            <li class="icon_bar_item"><a class="menu-icon-links" href="#projects"><i class="fas fa-briefcase"></i></a></li>
+            <li class="icon_bar_item"><a class="menu-icon-links" target="_blank" href="./media/Jignesh_Modi_Full_Time_SE.pdf"><i class="fas fa-file"></i></a></li>
+            <li class="icon_bar_item" style="margin-right: 0;"><a class="menu-icon-links" href="#projects"><i class="fas fa-laptop-code"></i></a></li>
         <ul>
     </section>
     <!-- Projects -->
-    <seaction class="section-project">
+    <seaction id="projects" class="section-project">
+
         <div class="projects_wrapper">
+
             <div class="card">
                 <div class="face face1">
                     <div class="content"> 
-                        <img src="https://picsum.photos/200" alt="">
-                        
+                        <img class="project-img" src="./media/tammira.png" alt="">
                     </div>
                 </div>
                 <div class="face face2">
                     <div class="content"> 
-                        <h3> Project 1 </h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, eaque veniam. </p>
-                        <a href="#"> Read More </a>
+                        <h3 class="project-title"> Tammira </h3>
+                        <p class="project-desc">Built backend services for user authentication, verification, home page feed, using Nodejs and MongoDB
+                            for a community platform IOS application to serve people working in personalization industry.</p>
+                        <a target="_blank" href="https://tammira.com/"> Check Out </a>
                     </div>
                 </div>
             </div>
@@ -55,14 +61,15 @@
             <div class="card">
                 <div class="face face1">
                     <div class="content"> 
-                        <img src="https://picsum.photos/200" alt="">
+                        <img class="project-img" src="./media/holagrad.png" alt="">
                     </div>
                 </div>
                 <div class="face face2">
                     <div class="content"> 
-                        <h3> Project 1 </h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, eaque veniam.</p>
-                        <a href="#"> Read More </a>
+                        <h3 class="project-title"> Holagrad </h3>
+                        <p class="project-desc">Pioneered an interactive web-first platform for peer-to-peer referrals sharing, networking and roommate finder. Responsibility
+                            includes development and end-to-end integration of housing and users sub system. </p>
+                        <a target="_blank" href="https://holagrad.com/"> Check Out </a>
                     </div>
                 </div>
             </div>
@@ -70,23 +77,74 @@
             <div class="card">
                 <div class="face face1">
                     <div class="content"> 
-                        <img src="https://picsum.photos/200" alt="">
+                        <img class="project-img" src="./media/tetris.png" alt="">
                     </div>
                 </div>
                 <div class="face face2">
                     <div class="content"> 
-                        <h3> Project 1 </h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, eaque veniam.</p>
-                        <a href="#"> Read More </a>
+                        <h3 class="project-title"> Tetris Game (Reinforcement Learning)</h3>
+                        <p class="project-desc">Engineered​ an online multiplayer Tetris game employing socket.io for real-time communications between players, along with a
+                            reinforcement learning agent to decide turns between players.</p>
+                        <a target="_blank" href="https://multihri.herokuapp.com/"> Check Out </a>
                     </div>
                 </div>
             </div>
+
         </div>
+
+        <div class="projects_wrapper">
+
+            <div class="card">
+                <div class="face face1">
+                    <div class="content"> 
+                        <img class="project-img" src="./media/icaros.png" alt="">
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content"> 
+                        <h3 class="project-title"> Icaros Lab Webiste </h3>
+                        <p class="project-desc">Website for Lab to keep track of research papers publications, researchers, and latest news related to ICAROS</p>
+                        <a target="_blank" href="http://icaros.usc.edu/"> Check Out </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="face face1">
+                    <div class="content"> 
+                        <img class="project-img" src="./media/quiz.png" alt="">
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content"> 
+                        <h3 class="project-title"> Quiz Game (FTRL Algorithm) </h3>
+                        <p class="project-desc">Realtime multiplayer quiz for research study to test algorithm which assigns task(questions) based on contextual knowledge estimating it using reinforcement learning</p>
+                        <a target="_blank" href="https://icaros-quiz.herokuapp.com/"> Check Out </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="face face1">
+                    <div class="content"> 
+                        <img src="./media/assembly.png" alt="">
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content"> 
+                        <h3 class="project-title"> Assembling Shelf</h3>
+                        <p class="project-desc">On going study to help understand human patterns in assembling task and then able to predict next moves</p>
+                        <a target="_blank" href="https://assembly-exp.herokuapp.com/"> Check Out </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
     </seaction>
 
     <section class="contact-us">
             <div class="contact-us-form">
-                 
                     <h3> contact us </h3>
                     <input class="form-field" type="text" name="name" id="name" placeholder="Name">
                     <textarea class="form-field textarea" name="message" id="message" placeholder="Message"></textarea>
@@ -95,4 +153,23 @@
     </section>
 
 </body>
+<script>
+    var yourAudio = document.getElementById('yourAudio'),
+    ctrl = document.getElementById('audioControl');
+
+    ctrl.onclick = function () {
+        // Update the Button
+        var pause = false 
+        //ctrl.innerHTML === 'pause!';
+        // ctrl.innerHTML = pause ? 'play!' : 'pause!';
+
+        // Update the Audio
+        var method = pause ? 'pause' : 'play';
+        yourAudio[method]();
+
+        // Prevent Default Action
+        return false;
+    };
+</script>
+
 </html>
